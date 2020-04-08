@@ -16,7 +16,7 @@ import GlobalStyle from './styles/global';
 
 function App() {
     return (
-        <Provider store={store}>
+        <Provider store={store}> {/* conceder à aplicação a capacidade de usar o store */}
             {/* renderizar o conteúdo das rotas, somente depois de ter buscado as informações do storage da aplicação */}
             <PersistGate persistor={persistor}> 
                 <Router history={history}>
